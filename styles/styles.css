@@ -192,6 +192,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .popup-numberInput{
     margin-bottom: 30px;
+    text-shadow: 1px 0 1px black, 
+    0 1px 1px black, 
+    -1px 0 1px black, 
+    0 -1px 1px black;
 }
 
 
@@ -241,6 +245,10 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 67px;
     text-align: center;
     color: #FFFFFF;
+    text-shadow: 1px 0 1px black, 
+    0 1px 1px black, 
+    -1px 0 1px black, 
+    0 -1px 1px black;
 } 
 
 .popup__close-btn{

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="icon" href="resources/favicon.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>my Expenses App</title>
+</head>
+
+<body>
+  <h1 class="label">Учет расходов</h1>
+  <div class="container">
+
+    <div class="input-wrap">
+      <div class="numberInput currency">
+        <input 
+        class="js-input input" 
+        type="number" 
+        min="1" 
+        />
+      </div>
+      <select class="js-textInput textInput"> 
+        <option hidden="" disabled="" selected="" value="Категория">Категория</option>
+        <option value="Продукты">Продукты</option>
+        <option value="Кафе">Кафе и рестораны</option>
+        <option value="Квартира">Квартира</option>
+        <option value="Авто">Авто</option>
+      </select>
+    </div>
+    <div class="button-wrap">
+      <button class="js-button button">Добавить</button>
+    </div>
+    <div class="results-wrap">
+      <div class="rasult-limit">
+        <span class="label">Лимит: </span>
+        <span class="js-limit limit currency">10000</span>
+        <img 
+          class="js-newLimit js-btn newLimit"
+          src="resources/image-btn 1.png" 
+          alt="иконка смены лимита">
+      </div>
+      <div class="rasult-total">
+        <span class="label">Всего: </span>
+        <span class="js-sum currency">0</span>
+      </div>
+      <div class="rasult-status">
+        <span class="label">Статус: </span>
+        <span class="js-status status_fine"></span>
+      </div>
+    </div>
+    <div class="history-wrap">
+      <span class="label title-history">История:</span>
+      <div class="history">
+        <ol class="js-history"></ol>
+      </div>
+    </div>
+<div class="reset-button-inner">
+  <button class="js-reset-button button reset-button">Сбросить расходы</button>
+</div>
+
+  </div>
+
+  <section class="section-popup">
+    <div class="js-popup popup">
+      <div class="js-popup__content popup__content">
+        <p class="title popup__title">Новый лимит</p>
+          <div class="popup-wrapper">
+            <div class="popup-inner__input">
+              <div class="popup-numberInput numberInput currency">
+                <input 
+                class="js-popup__input input" 
+                type="number" 
+                min="1" 
+                />
+              </div>
+            </div>
+            <div class="popup-inner__button">
+              <button class="js-popup__button button popup__button">Задать лимит</button>
+            </div>
+          </div>
+        <div class="js-popup__close-btn popup__close-btn">
+          <img src="resources/cross-button.png" alt="крестик закрытия попапа">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="index.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
